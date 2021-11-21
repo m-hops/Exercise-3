@@ -10,12 +10,27 @@ $(document).ready (function(){
        cache: false,
        timeout: 600000,
        success: function (response) {
-       //reponse is a STRING (not a JavaScript object -> so we need to convert)
-       console.log("we had success!");
-       console.log(response);
+       let parsedJSON = JSON.parse(response);
+       console.log(parsedJSON);
       },
       error:function(){
      console.log("error occurred");
    }
  });
  });
+
+ // function displayPull(genres){
+ //
+ //   let htmlForm = $("#form_options");
+ //   for(let i = 0; i != genres.length; ++i){
+ //     let htmlInput = $("<input>");
+ //     $(htmlInput).attr('type', 'radio');
+ //     $(htmlInput).attr('name', 'capsule_mus');
+ //     $(htmlInput).attr('value', genres[i]);
+ //     $(htmlInput).appendTo(htmlForm);
+ //     let htmlLable = $("<label>");
+ //     $(htmlLable).attr('for', genres[i]);
+ //     $(htmlLable).text(genres[i]);
+ //     console.log(genres[i]);
+ //   }
+ // }

@@ -14,17 +14,20 @@
 
     <form id="capsule_data" method="post" enctype ="multipart/form-data">
 
-      <img src="media/giveMusic.png" id="giveMusic">
-      <img src="media/cuppedHands.png" id="cuppedHands">
-
     <section id="sub_field">
 
     <p></p>
     <div id="form_options">
     </div>
-    <p class = "sub"><input type = "submit" name = "submit" value = "reCeiVe yOUr MomENTo" id ="buttonS" /></p>
+    <p class = "sub"><input type = "submit" name = "submit" value = "H̵̹͕̜̲͔͓̣̣͙͌̃́͂̐̏̅̌́a̷̢̙̭̭̗̙̙̣̪̻̘̪̾͑́ ̷̪̻͛̀̐͑̾̈́̆́͐͒̈́̾͠ḧ̵̲͉̻́̽͐̀̆͘Ą̵̧̜̜̝̪̤̝̘̜̯͖͓̻̉̆̇̐̑̎͜ ̷̡̡͖̤͎͔̠͙̪̙̺̋́̀̏̈́͂͒̋͗͆̍͌͐̄ͅḦ̴̢̖̣̝͎̱̝̘̜́Ą̶̩̥̰̮̘̫̹͇̠̰̏" id ="buttonS" /></p>
 
   </section>
+
+  <img src="media/music0.png" id="music0">
+  <img src="media/music1.png" id="music1">
+  <img src="media/giveMusic.png" id="giveMusic">
+  <img src="media/cuppedHands.png" id="cuppedHands">
+
 
   </form>
 

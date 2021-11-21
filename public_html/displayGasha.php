@@ -1,11 +1,32 @@
 <?php
-if($_SERVER['REQUEST_METHOD'] == 'GET')
-  {
-    if($_GET['capsule_name']){
-    echo("we have data to process");
-    exit;
+  require('openDB.php');
+
+  try{
+
+    $sql_def = "SELECT * FROM gashaCollection ORDER BY RANDOM() LIMIT 1";
+    //$sql_def = "SELECT * FROM gashaCollection";
+    // the result set
+    $result = $file_db->query($sql_def);
+
+    if (!$result) die("Cannot execute query.");
+    //var_dump($result);
+
+    if($row = $result->fetch(PDO::FETCH_ASSOC)) {
+      $name = $row['name'];
+      $music = $row['music'];
+      $img = $row['image'];
+
+      echo "<p id=\"pullNameDisplay\">" . $name . "</p>";
+      echo "<img id=\"pullImageDisplay\" src=\"images/" . $img. "\"/>";
+      echo "<p id=\"pullMusicDisplay\">" . $music . "</p>";
+    }
+
+    $file_db = null;
   }
-}
+  catch(PDOException $e) {
+     // Print PDOException message
+     echo $e->getMessage();
+   }
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +38,15 @@ if($_SERVER['REQUEST_METHOD'] == 'GET')
 </head>
 <body>
 
-<section class='pullArea' id="userPull">
+  <video autoplay muted loop id="vidBKG" src="video/emergencyBroadcast.mp4"></video>
+
+  <section class='instructionArea'>
+  </section>
+
+  <section class='pullOutput'>
+  </section>
+
+
 
 
 
