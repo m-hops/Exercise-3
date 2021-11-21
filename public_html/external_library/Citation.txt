@@ -1,0 +1,5 @@
+Citation and attribution:
+
+Author: jhuckaby
+Source:	https://github.com/jhuckaby/webcamjs
+
