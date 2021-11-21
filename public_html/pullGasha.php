@@ -12,13 +12,13 @@
 
     try{
 
-      $sql_def = "SELECT * FROM gashaCollection ORDER BY RAND() LIMIT 1";
-
+      $sql_def = "SELECT * FROM gashaCollection ORDER BY RANDOM() LIMIT 1";
+      //$sql_def = "SELECT * FROM gashaCollection";
       // the result set
       $result = $file_db->query($sql_def);
 
       if (!$result) die("Cannot execute query.");
-      var_dump($result);
+      //var_dump($result);
 
       while($row = $result->fetch(PDO::FETCH_ASSOC))
       {

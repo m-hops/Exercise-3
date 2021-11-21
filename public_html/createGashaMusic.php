@@ -20,15 +20,8 @@
     <section id="sub_field">
 
     <p></p>
-    <input type="radio" name = "capsule_mus" value="genre0">
-    <label for="genre0">Pop</label>
-    <input type="radio" name = "capsule_mus" value="genre1">
-    <label for="genre1">Hip Hop</label>
-    <input type="radio" name = "capsule_mus" value="genre2">
-    <label for="genre2">Rock</label>
-    <input type="radio" name = "capsule_mus" value="genre3">
-    <label for="genre3">Random</label>
-
+    <div id="form_options">
+    </div>
     <p class = "sub"><input type = "submit" name = "submit" value = "reCeiVe yOUr MomENTo" id ="buttonS" /></p>
 
   </section>
