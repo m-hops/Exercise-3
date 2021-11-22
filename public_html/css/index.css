@@ -284,6 +284,18 @@ section.capsule_output {
           animation: vibrate-1 4s linear infinite both;
 }
 
+#pullIDDisplay {
+  position: absolute;
+  left:15%;
+  top:10%;
+  width:15%;
+  font-family: glitchFont;
+  color:rgb(153,138,51);
+  font-size: 2vw;
+  -webkit-animation: vibrate-1 4s linear infinite both;
+          animation: vibrate-1 4s linear infinite both;
+}
+
 #pullMusicDisplay {
   position: absolute;
   left:40%;
@@ -327,6 +339,26 @@ section.capsule_output {
   filter:drop-shadow(-6px 6px 5px rgba(153,138,51,0.15));
   -webkit-animation: vibrate-1 2.5s linear infinite both;
           animation: vibrate-1 2.5s linear infinite both;
+}
+
+#resetIMG {
+  position: absolute;
+  right:10%;
+  bottom:10%;
+  width:20%;
+  height:auto;
+  -webkit-animation: vibrate-1 2s linear infinite both;
+          animation: vibrate-1 2s linear infinite both;
+}
+
+#resetIMG:hover {
+  position: absolute;
+  right:10%;
+  bottom:10%;
+  width:20%;
+  height:auto;
+  -webkit-animation: vibrate-1 0.5s linear infinite both;
+          animation: vibrate-1 0.5s linear infinite both;
 }
 
 

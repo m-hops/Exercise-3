@@ -30,12 +30,14 @@
           $name = $row['name'];
           $music = $row['music'];
           $img = $row['image'];
+          $pieceID = $row['pieceID'];
 
           echo "<img id=\"pullImageDisplay\" src=\"images/" . $img. "\"/>";
           echo "<img id=\"pullCardBKG\" src=\"media/cardBase.png\"/>";
           echo "<img id=\"youPulledIMG\" src=\"media/youPulled.png\"/>";
           echo "<img id=\"pullMusicGenre\" src=\"media/pullMusicGenre.png\"/>";
           echo "<p id=\"pullNameDisplay\">" . $name . "</p>";
+          echo "<p id=\"pullIDDisplay\"> No." . $pieceID . "</p>";
           echo "<p id=\"pullMusicDisplay\">" . $music . "</p>";
         }
 
@@ -47,6 +49,8 @@
        }
     ?>
   </section>
+
+  <a href="index.html"><img id="resetIMG" src="media/reset.png"></a>
 
 </section>
 
