@@ -24,9 +24,9 @@
     <div id="results" ></div>
 
     <input type=button value="Say Cheese..." onClick="take_snapshot()">
-    <input type=button value="Save Snapshot" onClick="saveSnap()">
+    <input type=button value="Choose your image..." onClick="saveSnap()">
 
-    <p class = "sub"><input type = "submit" name = "submit" value = "One more step..." id ="buttonS" /></p>
+    <p class = "sub"><input type = "submit" name = "submit" value = "Finish and move on...." id ="buttonS" /></p>
 
   </section>
 

@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <head>
 <title> Cursed GashaPon: Display </title>
@@ -41,7 +39,7 @@
           echo "<p id=\"pullMusicDisplay\">" . $music . "</p>";
         }
 
-        // $file_db = null;
+        $file_db = null;
       }
       catch(PDOException $e) {
          // Print PDOException message
