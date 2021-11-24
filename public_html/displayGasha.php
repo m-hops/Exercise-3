@@ -50,7 +50,7 @@
     ?>
   </section>
 
-  <a href="index.html"><img id="resetIMG" src="media/reset.png"></a>
+  <a href="index.php"><img id="resetIMG" src="media/reset.png"></a>
 
 </section>
 
